@@ -5,7 +5,7 @@
 int main(void)
 {
     size_t decimal = 0, decimal_equivalent = 0;
-    char input_value[100] = {0};
+    char input_value[100];
     char *equivalent = NULL;
     int choice = 0;
     printf("%s\n", "Welcome to my Calculator!");
