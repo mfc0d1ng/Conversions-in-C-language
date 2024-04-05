@@ -102,7 +102,7 @@ int main(void)
             printf("%s", "Enter hexadecimal value: ");
             scanf("%100s", input_value);
             equivalent = HexToOct(input_value);
-            printf("-> %s0o%s\n\n\n", "The binary equivalent is: ", equivalent);
+            printf("-> %s0o%s\n\n\n", "The octal equivalent is: ", equivalent);
             break;
 
         case 11:
