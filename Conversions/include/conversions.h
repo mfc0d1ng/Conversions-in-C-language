@@ -1,3 +1,11 @@
+/**
+ * @brief A set of functions for converting numbers
+ * to its equivalents in other numerial systems.
+ *  
+ * @file conversions.h
+ * @author Mohamed fareed.
+*/
+
 #ifndef CONVERSIONS_H
 
 /**
