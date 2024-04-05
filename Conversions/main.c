@@ -19,12 +19,11 @@ int main(void)
                        "4.  Convert octal to decimal.\n"
                        "5.  Convert octal to hexadecimal.\n"
                        "6.  Convert decimal to binary.\n"
-                       "7.  Convert decimal to decimal.\n"
+                       "7.  Convert decimal to octal.\n"
                        "8.  Convert decimal to hexadecimal.\n"
                        "9.  Convert hexadecimal to binary.\n"
                        "10. Convert hexadecimal to octal.\n"
-                       "11. Convert hexadecimal to decimal.\n"
-                       );
+                       "11. Convert hexadecimal to decimal.\n");
         printf("%s", "Your choice: ");
         scanf("%i", &choice);
         switch (choice)
