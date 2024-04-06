@@ -23,13 +23,13 @@ static void* reserve(size_t __n)
 }
 
 /**
- * @brief Counts the number of digits in a value according to base.
+ * @brief Counts the number of digits in the equivalents of a decimal value.
  * @param __val Decimal value.
  * @param __base Base value.
- * @return The number of digits in a value.
+ * @return The number of digits in the value equivalent.
  * 
- * This function counts the number of digits in the value given in
- * @a __val according to @a __base value.
+ * This function Counts the number of digits in a value equivalent to 
+ * the value in @a __val according to @a __base.
 */
 static int count_digits(size_t __val, int __base)
 {
