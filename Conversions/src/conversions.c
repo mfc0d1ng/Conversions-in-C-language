@@ -11,7 +11,7 @@
  * @brief Allocates N bytes of memory.
  * @return A pointer to the first byte in the allocated memory
  *         block or NULL if memory allocation fails.
-*/
+ */
 static void* reserve(size_t __n)
 {
     void* __p = malloc(__n);
@@ -28,9 +28,9 @@ static void* reserve(size_t __n)
  * @param __base Base value.
  * @return The number of digits in the value equivalent.
  * 
- * This function Counts the number of digits in a value equivalent to 
- * the value in @a __val according to @a __base.
-*/
+ * This function Counts the number of digits in a value equivalent to  @a __val 
+ * in other numerial systems according to @a __base.
+ */
 static int count_digits(size_t __val, int __base)
 {
     int count = __val ? 0 : 1;
