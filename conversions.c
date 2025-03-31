@@ -31,6 +31,35 @@ void BinToHex(string* hexadecimal, const string* binary)
 }
 
 
+void OctToBin(string* binary, const string* octal)
+{
+    DecToBin(binary, OctToDec(octal));
+}
+
+size_t OctToDec(const string* octal)
+{
+    size_t decimal = 0, base = 1;
+    for (string_iterator it = string_rbegin(octal); it != string_rend(octal); --it)
+    {
+        if(*it >= '0' && *it < '8')
+        {
+            decimal += (*it - '0') * base;
+            base *= 8;
+        }
+        else
+        {
+            break;
+        }
+    }
+    return decimal;
+}
+
+void OctToHex(string* hexadecimal, const string* octal)
+{
+    DecToHex(hexadecimal, OctToDec(octal));
+}
+
+
 void DecToBin(string* binary, size_t decimal)
 {
     do
@@ -62,35 +91,6 @@ void DecToHex(string* hexadecimal, size_t decimal)
             string_insert(hexadecimal, string_begin(hexadecimal), value + 'W');
         }
     } while ((decimal /= 16));
-}
-
-
-void OctToBin(string* binary, const string* octal)
-{
-    DecToBin(binary, OctToDec(octal));
-}
-
-size_t OctToDec(const string* octal)
-{
-    size_t decimal = 0, base = 1;
-    for (string_iterator it = string_rbegin(octal); it != string_rend(octal); --it)
-    {
-        if(*it >= '0' && *it < '8')
-        {
-            decimal += (*it - '0') * base;
-            base *= 8;
-        }
-        else
-        {
-            break;
-        }
-    }
-    return decimal;
-}
-
-void OctToHex(string* hexadecimal, const string* octal)
-{
-    DecToHex(hexadecimal, OctToDec(octal));
 }
 
 
