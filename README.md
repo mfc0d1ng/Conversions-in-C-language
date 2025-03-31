@@ -13,7 +13,7 @@ You need to install this <a href="https://github.com/mfc0d1ng/Handling-dynamic-s
 <code class="language-c">
 #include &lt;stdio.h&gt;
 #include &lt;stdlib.h&gt;
-#include "conversions.h"
+#include "include/conversions.h"
 
 int main()
 {
@@ -37,7 +37,7 @@ int main()
 <code class="language-c">
 #include &lt;stdio.h&gt;
 #include &lt;stdlib.h&gt;
-#include "conversions.h"
+#include "include/conversions.h"
 
 int main()
 {
@@ -61,7 +61,7 @@ int main()
 <code class="language-c">
 #include &lt;stdio.h&gt;
 #include &lt;stdlib.h&gt;
-#include "conversions.h"
+#include "include/conversions.h"
 
 int main()
 {
