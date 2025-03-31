@@ -30,3 +30,27 @@ int main()
 }
 </code>
 </pre>
+
+* Example B:
+
+<pre>
+<code class="language-c">
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include "conversions.h"
+
+int main()
+{
+    string hexadecimal = string_from("0xf4240");
+
+    /* Convert a hexadecimal value (0xf4240) to decimal */
+    size_t decimal = HexToDec(&hexadecimal);
+
+    printf("0xf4240(hex) = %lu(dec)\n", decimal);
+
+    string_destructor(&hexadecimal);
+  
+    return EXIT_SUCCESS;
+}
+</code>
+</pre>
