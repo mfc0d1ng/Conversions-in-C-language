@@ -25,27 +25,6 @@ extern void BinToOct(string* octal, const string* binary);
 extern void BinToHex(string* hexadecimal, const string* binary);
 
 /**
- * @brief Converts a decimal value to binary value.
- * @param binary Buffer to store the binary value.
- * @param decimal Decimal value.
- */
-extern void DecToBin(string* binary, size_t decimal);
-
-/**
- * @brief Converts a decimal value to octal value.
- * @param octal Buffer to store the octal value.
- * @param decimal Decimal value.
- */
-extern void DecToOct(string* octal, size_t decimal);
-
-/**
- * @brief Converts a decimal value to hexadecimal value.
- * @param octal Buffer to store the hexadecimal value.
- * @param decimal Decimal value.
- */
-extern void DecToHex(string* hexadecimal, size_t decimal);
-
-/**
  * @brief Converts an octal value to binary value.
  * @param binary Buffer to store the binary value.
  * @param Octal Octal value.
@@ -65,6 +44,27 @@ extern size_t OctToDec(const string* octal);
  * @param Octal Octal value.
  */
 extern void OctToHex(string* hexadecimal, const string* octal);
+
+/**
+ * @brief Converts a decimal value to binary value.
+ * @param binary Buffer to store the binary value.
+ * @param decimal Decimal value.
+ */
+extern void DecToBin(string* binary, size_t decimal);
+
+/**
+ * @brief Converts a decimal value to octal value.
+ * @param octal Buffer to store the octal value.
+ * @param decimal Decimal value.
+ */
+extern void DecToOct(string* octal, size_t decimal);
+
+/**
+ * @brief Converts a decimal value to hexadecimal value.
+ * @param octal Buffer to store the hexadecimal value.
+ * @param decimal Decimal value.
+ */
+extern void DecToHex(string* hexadecimal, size_t decimal);
 
 /**
  * @brief Converts a hexadecimal value to binary value.
